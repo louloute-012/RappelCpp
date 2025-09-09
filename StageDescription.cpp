@@ -3,9 +3,11 @@
 
 #include <iostream>
 #include "Entreprise.h"
+#include "Mission.h"
 int main()
 {
     Entreprise monEntreprise;
+    Mission maMission;
     monEntreprise.setVilleEntreprise("Guer");
 
     std::cout << "Salut le stage dans la ville \n"+ monEntreprise.getVilleEntreprise();
