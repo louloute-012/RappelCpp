@@ -2,10 +2,13 @@
 //
 
 #include <iostream>
-
+#include "Entreprise.h"
 int main()
 {
-    std::cout << "Salut le stage\n";
+    Entreprise monEntreprise;
+    monEntreprise.setVilleEntreprise("Guer");
+
+    std::cout << "Salut le stage dans la ville \n"+ monEntreprise.getVilleEntreprise();
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
