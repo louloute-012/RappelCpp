@@ -4,13 +4,28 @@
 #include <iostream>
 #include "Entreprise.h"
 #include "Mission.h"
-int main()
-{
-    Entreprise monEntreprise;
-    Mission maMission;
-    monEntreprise.setVilleEntreprise("Guer");
 
-    std::cout << "Salut le stage dans la ville \n"+ monEntreprise.getVilleEntreprise();
+int main() {
+    
+    Entreprise monEntreprise;
+    monEntreprise.setEntreprise("Flypc");
+    monEntreprise.setVilleEntreprise("Saclas");
+
+    Mission maMission;
+    maMission.setNbPersonne(3);
+    maMission.setDescriptifMission("Installation et codage d'un site");
+    maMission.setNbHeure(12);
+
+    std::cout << "=== Informations sur l'entreprise ===" << std::endl;
+    std::cout << "Nom : " << monEntreprise.getNomEntreprise() << std::endl;
+    std::cout << "Ville : " << monEntreprise.getVilleEntreprise() << std::endl;
+
+    std::cout << "\n=== Informations sur la mission ===" << std::endl;
+    std::cout << "Descriptif : " << maMission.getDescriptifMission() << std::endl;
+    std::cout << "Nombre de personnes : " << maMission.getNbPersonne() << std::endl;
+    std::cout << "Durée en heures : " << maMission.getNbHeure() << std::endl;
+
+    return 0;
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
